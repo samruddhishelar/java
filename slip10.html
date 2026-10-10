@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Student Report</h2>
+<p id="report"></p>
+
+<script>
+ 
+    let name = "Rahul";
+    let rollNo = 10;
+    let course = "BSc Computer Science";
+
+    
+    let m1 = 80;
+    let m2 = 75;
+    let m3 = 90;
+
+    
+    let total = m1 + m2 + m3;
+    let average = total / 3;
+
+    
+    let report = `
+        Student Name: ${name}<br>
+        Roll Number: ${rollNo}<br>
+        Course: ${course}<br>
+        Subject 1 Marks: ${m1}<br>
+        Subject 2 Marks: ${m2}<br>
+        Subject 3 Marks: ${m3}<br>
+        Total Marks: ${total}<br>
+        Average Marks: ${average.toFixed(2)}
+    `;
+
+    document.getElementById("report").innerHTML = report;
+</script>
+
+</body>
+</html>

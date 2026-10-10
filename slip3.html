@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Homepage</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        
+        header {
+            background-color: navy;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+       
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: lightblue;
+            gap: 20px;
+            padding: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        
+        main {
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        section {
+            background-color: lightyellow;
+            padding: 20px;
+            flex: 1;
+        }
+
+       
+        footer {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+       
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ABC College</h1>
+        <p>Welcome to Our College</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Courses</a>
+        <a href="#">Admission</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>ABC College provides quality education
+            and excellent learning opportunities.</p>
+        </section>
+
+        <section>
+            <h2>Our Courses</h2>
+            <p>BSc Computer Science, BCA, BCom and BA.</p>
+        </section>
+
+        <section>
+            <h2>Facilities</h2>
+            <p>Library, computer laboratory, sports
+            and experienced teachers.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright 2026 ABC College</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Product Bill</h2>
+<p id="bill"></p>
+
+<script>
+    let product = "Laptop";
+    let price = 40000;
+    let quantity = 2;
+
+   
+    let calculateBill = (price, quantity) => price * quantity;
+
+    let total = calculateBill(price, quantity);
+
+    
+    let bill = `
+        Product Name: ${product}<br>
+        Price: ₹${price}<br>
+        Quantity: ${quantity}<br>
+        Total Price: ₹${total}
+    `;
+
+    document.getElementById("bill").innerHTML = bill;
+</script>
+
+</body>
+</html>

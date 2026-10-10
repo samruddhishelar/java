@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .form {
+            background-color: lightyellow;
+            width: 380px;
+            padding: 15px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 12px;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            margin-top: 10px;
+        }
+
+        input, select, textarea {
+            margin-top: 8px;
+        }
+
+        .hint {
+            color: red;
+            font-size: 10px;
+        }
+
+        .btn {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form">
+    <h2>My-Future College / School</h2>
+    <p>Please Fill Below Detail In Student Registration Form</p>
+
+    <form>
+        <label>Student name:</label>
+        <input type="text" required minlength="3" maxlength="10">
+        <span class="hint">Min 3 & Max 10 letter</span>
+        <br>
+
+        <label>Date of birth:</label>
+        <input type="date" required>
+        <br>
+
+        <label>Mobile no.:</label>
+        <input type="tel" pattern="[0-9]{10}" required>
+        <span class="hint">Only 10 digits</span>
+        <br>
+
+        <label>Email id:</label>
+        <input type="email" required>
+        <br>
+
+        <label>Password:</label>
+        <input type="password" required minlength="8">
+        <span class="hint">Min 8 digit</span>
+        <br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br>
+
+        <label>Hobbies:</label>
+        <input type="checkbox"> Drawing
+        <input type="checkbox"> Singing
+        <input type="checkbox"> Dancing
+        <input type="checkbox"> Sketch
+        <input type="checkbox"> Sports
+        <br>
+
+        <label>Course:</label>
+        <select required>
+            <option value="">Select Admission Course</option>
+            <option>BCA</option>
+            <option>BSc Computer Science</option>
+            <option>BCom</option>
+            <option>BA</option>
+        </select>
+        <br>
+
+        <label>Student photo:</label>
+        <input type="file" accept="image/*">
+        <br>
+
+        <label>Register Time:</label>
+        <input type="time">
+        <br>
+
+        <label>Address:</label>
+        <textarea rows="3" cols="25" required></textarea>
+        <br><br>
+
+        <input type="checkbox" required>
+        I hereby declare that above information provided is correct.
+
+        <div class="btn">
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

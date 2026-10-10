@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Image Change</h2>
+
+    <img id="pic"
+         src="image1.jpg"
+         alt="First Image">
+
+    <br><br>
+
+    <button onclick="changeImage()">Change Image</button>
+
+    <script>
+        function changeImage() {
+            document.getElementById("pic").src =
+            "image2.jpg";
+        }
+    </script>
+</body>
+</html>
